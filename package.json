@@ -1,0 +1,25 @@
+{
+  "name": "lab02-static-server",
+  "version": "0.0.0",
+  "description": "Servidor Web statico en node",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saramorales/lab02-static-server.git"
+  },
+  "keywords": [
+    "node",
+    "static-server",
+    "web"
+  ],
+  "author": "@sarismorrison",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/saramorales/lab02-static-server/issues"
+  },
+  "homepage": "https://github.com/saramorales/lab02-static-server#readme"
+}
