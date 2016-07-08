@@ -1,13 +1,14 @@
 // http
 var http= require("http");
 var fs= require('fs');
+var config= require("./config/config.js");
 //obteniendo informacion del entorno
 // De ejecucion con respecto al IP
 // y al puertoque debemos usar en 
 // nuestro server.
-var PORT= process.env.PORT || 3000;
-var IP= process.env.IP || '192.168.1.41';
-if (IP=='192.168.1.41'){
+var PORT= config.PORT;
+var IP= config.IP;
+if (IP=='127.0.0.1'){
     console.log(">------EJECUTANDO EN MODO LOCAL------");
 }
 // Crear un servidor basico
@@ -16,14 +17,15 @@ var server= http.createServer(function(req, res){
     // Armar un encabezado http
     res.writeHead(200, {
         "Content-Type": "text/html", 
-        "Server": "ITGAM@4.2.4"
+        "Server": "ITGAM4.2.4"
     });
     // Lectura del archivo a servir
-    fs.readFile('./static./index.html',
+    fs.readFile('./static/index.html',
     'utf8',function(err, content){
         if(err){
             res.write("<h1>ERROR DE LECTURA</H1>");
         }else{
+            res.write(content);
             res.end(content);
         }
     });
