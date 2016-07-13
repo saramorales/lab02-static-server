@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/saramorales/lab02-static-server#readme",
   "dependencies": {
+    "bower": "^1.7.9",
     "colors": "^1.1.2",
     "mime": "^1.3.4"
   }
