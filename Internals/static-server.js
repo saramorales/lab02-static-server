@@ -26,7 +26,7 @@ exports.server= function(url, res){
                     var contentType= mime.lookup(filePath);
                     // Armamos Respuesta
                     res.writeHead(200, {
-                        'Content-Type': contentType,
+                        'Content-Type': 'contentType',
                         'Server':'PilgrimHawks-Server@2.1.2',
                     });
                     // Enviar el archivo
@@ -37,7 +37,7 @@ exports.server= function(url, res){
             // Mando un codigo 404
             res.writeHead(404, {
                 'Content-Type': 'text/html',
-                'Server': 'PilgrimHawks-Server@2.1.2'
+                'Server': 'PilgrimHawks-Server@2.1.2',
              });
              res.end("<h1>404: Recurso no encontrado</h1>");
         }

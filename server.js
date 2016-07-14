@@ -3,8 +3,8 @@ var http= require("http"),
     fs= require('fs'),
     config= require("./config/config.js"),
     colors= require('colors')
-    staticServer= require('./Internals/static-server'),
-    handlers= require('./internals/handlers');
+    staticServer= require('./Internals/static-server.js'),
+    handlers= require('./Internals/handlers');
 //Obteniendo las configuraciones
 // del modulo de configuracion
 // y al puerto que debemos usar en 
