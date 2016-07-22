@@ -18,6 +18,7 @@ module.exports = {
      res.end(jsonResponse);
     },
    "/getfortune":function(req, res){
+       console.log(">Se solicita Fortuna...");
         // var fortunePaper = {
            // "mensaje" :
             //"La honestidad es un regalo caro, no lo esperes de gente barata"
